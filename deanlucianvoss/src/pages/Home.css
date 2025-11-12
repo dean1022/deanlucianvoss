@@ -1,0 +1,79 @@
+.title {
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.projects {
+  gap: 20px;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.experienceTitle {
+  font-weight: bold;
+}
+
+.teamImg {
+  width: 150px;
+  height: auto;
+  margin-top: 80px;
+}
+
+.centerLine {
+  text-align: center;
+}
+
+.leftLine {
+}
+
+.experience1 {
+  font-weight: smaller;
+}
+
+#keyboard {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+#skills a {
+  color: black !important;
+}
+
+img {
+  border-radius: 8px;
+}
+
+#more {
+  color: grey !important;
+}
+
+#more a:hover {
+  color: black !important;
+}
+
+@media (max-width: 576px) {
+  #keyboard {
+    padding-right: 0px;
+    border-radius: 5px;
+  }
+}
+
+.pop-off:hover {
+  transform: scale(1.05);
+}
+
+.contact-box {
+  background-color: #b2cdde;
+  margin: 20px !important;
+  padding: 20px !important;
+  text-align: center;
+}
+
+.project1 {
+  text-align: center;
+}
+
+.experiences {
+  text-align: left;
+}

@@ -1,15 +1,16 @@
 import logo from "./logo.png";
 import React from "react";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <div>
       <nav className="navbar navbar-expand-sm">
         <div className="container-fluid">
-          <a className="navbar-brand" href="home.html" title="Homepage">
+          <Link className="navbar-brand" to="/" title="Homepage">
             <img src={logo} width={50} height={50} alt="DLV logo" />
             Dean Lucian Voss
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -24,52 +25,52 @@ export default function Navigation() {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link" href="home.html" title="Homepage">
+                <Link className="nav-link" to="/" title="Homepage">
                   Home
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="about.html" title="About Dean">
+                <Link className="nav-link" to="/about" title="About Dean">
                   About
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="projects.html"
+                  to="/projects"
                   title="Dean's Projects"
                 >
                   Projects
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   class="nav-link"
-                  href="certifications.html"
+                  to="/certifications"
                   title="Dean's Certifications"
                 >
                   Certifications
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   className="nav-link"
-                  href="services.html"
+                  to="/services"
                   title="Dean's Services"
                 >
                   Services
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
                   type="button"
                   className="btn nav-link"
-                  href="contact.html"
+                  to="/contact"
                   id="contactBtn"
                   title="Contact Dean"
                 >
                   Contact
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
