@@ -1,15 +1,19 @@
 import React from "react";
+import "./About.css";
+import banner from "../images/banner.gif";
+import room from "../images/room.jpg";
+import coding from "../images/coding.jpg";
 
 export default function About() {
   return (
     <main>
-      <div class="content">
+      <div className="content">
         <h1>About</h1>
         <p>From hardware to coding...</p>
 
-        <img src="images/banner.gif" alt="gif banner" id="banner" />
+        <img src={banner} alt="gif banner" id="banner" />
 
-        <div style="text-align: center; margin: 60px">
+        <div className="description">
           <p>
             My journey into technology started in grade 7 when I was introduced
             to 3D printing and computer hardware. What began as curiosity grew
@@ -34,15 +38,10 @@ export default function About() {
           </p>
         </div>
 
-        <div class="row d-flex justify-content-evenly" id="experiences">
-          <div class="col-6">
-            <img
-              src="images/room.jpg"
-              alt="room"
-              class="img-fluid"
-              style="border-radius: 5px; margin-bottom: 10px"
-            />
-            <p style="font-weight: bold">
+        <div className="row d-flex justify-content-evenly" id="experiences">
+          <div className="col-6">
+            <img src={room} alt="room" className="img-fluid room" />
+            <p className="experience">
               Eeshani Guest Inn
               <br />
               2016-2024
@@ -68,15 +67,14 @@ export default function About() {
               </li>
             </ul>
           </div>
-          <div class="col-6">
+          <div className="col-6">
             <img
-              src="images/coding.jpg"
+              src={coding}
               alt="laptop with coding languages"
-              class="img-fluid"
-              style="border-radius: 5px; margin-bottom: 10px"
+              className="coding img-fluid"
             />
             <br />
-            <p style="font-weight: bold">
+            <p className="experience">
               SAP Canada
               <br />
               2018-2019
@@ -101,23 +99,23 @@ export default function About() {
           </div>
         </div>
 
-        <div style="text-align: center; margin: 60px" id="skills">
+        <div id="skills">
           <h5>Skills</h5>
-          <p style="margin: 0px 50px">
-            <span style="font-weight: bold">Technical Support & Systems: </span>
+          <p className="specificSkills">
+            <span className="experience">Technical Support & Systems: </span>
             Troubleshooting, end-user training, remote setup, Windows, Linux,
             Mac OS
             <br />
-            <span style="font-weight: bold">Full Stack Development: </span>HTML,
+            <span className="experience">Full Stack Development: </span>HTML,
             CSS, JavaScript, Python, Java, Smalltalk, SQL, REact
             <br />
-            <span style="font-weight: bold">Automation & Testing: </span>Python
+            <span className="experience">Automation & Testing: </span>Python
             Scripting, Cypress, Selenium, Postman, REST Assured, GitHub Actions
             <br />
-            <span style="font-weight: bold">Tools & Platforms:</span> Microsoft
+            <span className="experience">Tools & Platforms:</span> Microsoft
             Azure, Git, Office 365, VS Code, Raspberry Pi, Arduino
             <br />
-            <span style="font-weight: bold">Soft Skills: </span>Communication,
+            <span className="experience">Soft Skills: </span>Communication,
             collaboration, adaptability, proactive problem-solving
           </p>
         </div>

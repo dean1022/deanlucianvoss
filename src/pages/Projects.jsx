@@ -1,53 +1,34 @@
 import React from "react";
+import projectBanner from "../images/project-banner.jpg";
+import rcCar from "../images/rc-car.jpg";
+import foosball from "../images/foosball.jpg";
+import website from "../images/portfolio.png";
+import weather from "../images/weather-app.png";
+import clock from "../images/world-clock.png";
+import poem from "../images/poem-generator.png";
+import "./Projects.css";
 
 export default function Projects() {
   return (
     <main>
-      <div class="container">
+      <div className="container">
         <img
-          src="images/project-banner.jpg"
+          src={projectBanner}
           alt="heaphones and laptop"
-          class="project-banner"
+          className="project-banner"
         />
-        <div class="centered">
+        <div className="centered">
           <h1>Projects</h1>
         </div>
       </div>
 
-      <div class="content">
+      <div className="content">
         <h5>Work Projects</h5>
-        <div class="row" id="workProject1">
-          <div class="col-6">
-            <img
-              src="images/email.jpg"
-              alt="email compose box"
-              class="image img-thumbnail"
-            />
+        <div className="row" id="workProject1">
+          <div className="col-6">
+            <img src={rcCar} alt="rc car" className="image img-thumbnail" />
           </div>
-          <div class="text col-6">
-            <h6>AI-Powered Email Automation Tool</h6>
-            <p>
-              I built a Python-based tool that monitored a shared inbox and used
-              AI to automatically generate responses to frequent queries. This
-              project reduced response times by more than 50% and gave me
-              hands-on experience with email handling, automation logic, and API
-              integration.
-              <br />
-              <span style="font-weight: bold">Company: </span>Eeshani Guest Inn
-              <br />
-              <span style="font-weight: bold">Period: </span>Winter 2024
-            </p>
-          </div>
-        </div>
-        <div class="row" id="workProject2">
-          <div class="col-6">
-            <img
-              src="images/rc-car.jpg"
-              alt="rc car"
-              class="image img-thumbnail"
-            />
-          </div>
-          <div class="text col-6">
+          <div className="text col-6">
             <h6>RC Car Web Controller</h6>
             <p>
               I created a web-based interface that allowed a Raspberry
@@ -57,21 +38,21 @@ export default function Projects() {
               debugging steps, which strengthened my skills in hardware/software
               integration and responsive system design.
               <br />
-              <span style="font-weight: bold">Company: </span>SAP Canada
+              <span className="bold">Company: </span>SAP Canada
               <br />
-              <span style="font-weight: bold">Period: </span>Fall 2018
+              <span className="bold">Period: </span>Fall 2018
             </p>
           </div>
         </div>
-        <div class="row" id="workProject3">
-          <div class="col-6">
+        <div className="row" id="workProject2">
+          <div className="col-6">
             <img
-              src="images/foosball.jpg"
+              src={foosball}
               alt="foosball figurines"
-              class="image img-thumbnail"
+              className="image img-thumbnail"
             />
           </div>
-          <div class="text col-6">
+          <div className="text col-6">
             <h6>Foosball Scoring System</h6>
             <p>
               I developed a real-time scoring application that integrated
@@ -81,24 +62,24 @@ export default function Projects() {
               demos in fast-paced environments, which enhanced my skills in
               hardware integration, data handling, and reliable system design.
               <br />
-              <span style="font-weight: bold">Company: </span>SAP Canada
+              <span className="bold">Company: </span>SAP Canada
               <br />
-              <span style="font-weight: bold">Period: </span>Fall 2018
+              <span className="bold">Period: </span>Fall 2018
             </p>
             <p></p>
           </div>
         </div>
 
         <h5>Personal Projects</h5>
-        <div class="row">
-          <div class="col-6">
+        <div className="row">
+          <div className="col-6">
             <img
-              src="images/portfolio.png"
+              src={website}
               alt="home page of porfolio website"
-              class="image img-thumbnail"
+              className="image img-thumbnail"
             />
           </div>
-          <div class="text col-6">
+          <div className="text col-6">
             <h6>Portfolio Website</h6>
             <p>
               I designed and developed my personal portfolio website from
@@ -110,11 +91,11 @@ export default function Projects() {
               GitHub-hosted projects for live demonstrations.
               <br />
               <a
-                href="https://deanlucianvoss.netlify.app/home"
+                href="https://deanlucianvoss.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">Website Link</span>
+                <span className="bold">Website Link</span>
               </a>
               <br />
               <a
@@ -122,20 +103,20 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">GitHub Link</span>
+                <span className="bold">GitHub Link</span>
               </a>
             </p>
           </div>
         </div>
-        <div class="row" id="project1">
-          <div class="col-6">
+        <div className="row" id="project1">
+          <div className="col-6">
             <img
-              src="images/weather-app.png"
+              src={weather}
               alt="weather app"
-              class="image img-thumbnail"
+              className="image img-thumbnail"
             />
           </div>
-          <div class="text col-6">
+          <div className="text col-6">
             <h6>Weather App</h6>
             <p>
               I built a responsive weather application using HTML, CSS,
@@ -150,7 +131,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">Website Link</span>
+                <span className="bold">Website Link</span>
               </a>
               <br />
               <a
@@ -158,20 +139,20 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">GitHub Link</span>
+                <span className="bold">GitHub Link</span>
               </a>
             </p>
           </div>
         </div>
-        <div class="row" id="project2">
-          <div class="col-6">
+        <div className="row" id="project2">
+          <div className="col-6">
             <img
-              src="images/world-clock.png"
+              src={clock}
               alt="world clock site"
-              class="image img-thumbnail"
+              className="image img-thumbnail"
             />
           </div>
-          <div class="text col-6">
+          <div className="text col-6">
             <h6>World Clock</h6>
             <p>
               I developed a web-based world clock using HTML, CSS, and
@@ -185,7 +166,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">Website Link</span>
+                <span className="bold">Website Link</span>
               </a>
               <br />
               <a
@@ -193,20 +174,20 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">GitHub Link</span>
+                <span className="bold">GitHub Link</span>
               </a>
             </p>
           </div>
         </div>
-        <div class="row" id="project3">
-          <div class="col-6">
+        <div className="row" id="project3">
+          <div className="col-6">
             <img
-              src="images/poem-generator.png"
+              src={poem}
               alt="AI poem generator page"
-              class="image img-thumbnail"
+              className="image img-thumbnail"
             />
           </div>
-          <div class="text col-6">
+          <div className="text col-6">
             <h6>AI Poem Generator</h6>
             <p>
               I created an interactive web app that generates original poems
@@ -220,7 +201,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">Website Link</span>
+                <span className="bold">Website Link</span>
               </a>
               <br />
               <a
@@ -228,7 +209,7 @@ export default function Projects() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span style="font-weight: bold">GitHub Link</span>
+                <span className="bold">GitHub Link</span>
               </a>
             </p>
           </div>

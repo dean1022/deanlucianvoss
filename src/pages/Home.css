@@ -14,16 +14,15 @@
 }
 
 .teamImg {
+  display: flex;
   width: 150px;
   height: auto;
   margin-top: 80px;
 }
 
 .centerLine {
-  text-align: center;
-}
-
-.leftLine {
+  display: block;
+  align-items: center;
 }
 
 .experience1 {

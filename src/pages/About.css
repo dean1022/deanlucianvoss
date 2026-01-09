@@ -1,0 +1,40 @@
+.description {
+  text-align: center;
+  margin: 60px;
+}
+
+.experience {
+  font-weight: bold;
+}
+
+#skills {
+  text-align: center;
+  margin: 60px;
+}
+
+.specificSkills {
+  margin: 0px 50px;
+}
+
+.coding {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.room {
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+@media (max-width: 576px) {
+  #banner {
+    padding-right: 0px;
+    border-radius: 5px;
+  }
+}

@@ -1,5 +1,4 @@
 import React from "react";
-import email from "../images/email.jpg";
 import keyboard from "../images/keyboard.jpg";
 import weatherApp from "../images/weather-app.png";
 import worldClock from "../images/world-clock.png";
@@ -8,6 +7,7 @@ import team from "../images/team.jpg";
 import rcCar from "../images/rc-car.jpg";
 import foosball from "../images/foosball.jpg";
 import { Link } from "react-router-dom";
+import "./Home.css";
 
 export default function Home() {
   return (
@@ -63,54 +63,47 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        {/* <div className="title row d-flex justify-content-evenly"> */}
-        <div className="experiences col-sm-6">
-          <Link to="/about">
-            {" "}
-            <h5>Experience</h5>
-          </Link>
-          <br />
-          <div className="row experience1">
-            <div className="placePosition col-9">
-              <p className="experienceTitle">Eeshani Guest Inn</p>
-              <p>Junior Developer</p>
-              <p>Junior Automation Support</p>
-              <p>IT Support</p>
+        <div className="title row d-flex justify-content-evenly">
+          <div className="experiences col-sm-5">
+            <Link to="/about">
+              {" "}
+              <h5>Experience</h5>
+            </Link>
+            <br />
+            <div className="row experience1">
+              <div className="placePosition col-6">
+                <p className="experienceTitle">Eeshani Guest Inn</p>
+                <p>Junior Developer</p>
+                <p>Junior Automation Support</p>
+                <p>IT Support</p>
+              </div>
+              <div className="date col-3">2016-24</div>
             </div>
-            <div className="date col-3">2016-24</div>
+            <div className="row experience2">
+              <div className="placePosition col-6">
+                <p className="experienceTitle">SAP Canada</p>
+                <p>Junior Programmer</p>
+              </div>
+              <div className="date col-3">2018-19</div>
+            </div>
           </div>
-          <div className="row experience2">
-            <div className="placePosition col-9">
-              <p className="experienceTitle">SAP Canada</p>
-              <p>Junior Programmer</p>
-            </div>
-            <div className="date col-3">2018-19</div>
+          <div className="col-sm-4">
+            <img src={team} alt="" className="img-fluid teamImg" />
           </div>
         </div>
-        <div className="col-sm-5 centerLine">
-          <img src={team} alt="" className="img-fluid teamImg" />
-        </div>
-        {/* </div> */}
-
         <h5>Work Projects</h5>
         <div className="row d-flex justify-content-evenly projectTitle">
-          <div className="project1 col-sm-3 centerLine">
+          <div className="project1 col-sm-4 centerLine">
             <Link to="/projects">
-              <img src={email} alt="project 1" className="pop-off img-fluid" />
-              <p>AI Powered Email System</p>
-            </Link>
-          </div>
-          <div className="project2 col-sm-3 centerLine">
-            <Link to="projects">
-              <img src={rcCar} alt="project 2" className="pop-off img-fluid" />
+              <img src={rcCar} alt="project 1" className="pop-off img-fluid" />
               <p>RC Car Web Controller</p>
             </Link>
           </div>
-          <div className="project3 col-sm-3 centerLIne">
+          <div className="project2 col-sm-4 centerLIne">
             <Link to="/projects">
               <img
                 src={foosball}
-                alt="project 3"
+                alt="project 2"
                 className="pop-off img-fluid"
               />
               <p>Foosball Scoring System</p>

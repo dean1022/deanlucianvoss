@@ -1,11 +1,12 @@
 import logo from "./logo.png";
 import React from "react";
+import "./Navigation.css";
 import { Link, NavLink } from "react-router-dom";
 
 export default function Navigation() {
   return (
     <div>
-      <nav className="navbar navbar-expand-sm">
+      <nav className="navbar navbar-expand-sm navbar-light">
         <div className="container-fluid">
           <Link className="navbar-brand" to="/" title="Homepage">
             <img src={logo} width={50} height={50} alt="DLV logo" />
@@ -20,7 +21,7 @@ export default function Navigation() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
@@ -45,7 +46,7 @@ export default function Navigation() {
               </li>
               <li className="nav-item">
                 <Link
-                  class="nav-link"
+                  className="nav-link"
                   to="/certifications"
                   title="Dean's Certifications"
                 >
