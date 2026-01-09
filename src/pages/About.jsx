@@ -8,10 +8,17 @@ export default function About() {
   return (
     <main>
       <div className="content">
-        <h1>About</h1>
-        <p>From hardware to coding...</p>
-
-        <img src={banner} alt="gif banner" id="banner" />
+        <div className="container">
+          <img
+            src={banner}
+            alt="heaphones and laptop"
+            className="project-banner"
+          />
+          <div className="centered">
+            <h1>About</h1>
+            <p>From hardware to coding...</p>
+          </div>
+        </div>
 
         <div className="description">
           <p>

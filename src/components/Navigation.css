@@ -1,3 +1,7 @@
-av {
+nav {
   margin-top: 5px;
+}
+
+#navbarNav {
+  text-align: right;
 }

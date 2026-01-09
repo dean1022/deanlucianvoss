@@ -1,9 +1,12 @@
 import React from "react";
+import servicesBanner from "../images/services-banner.jpg";
+import servicesLife from "../images/services-life.jpg";
+import "./Services.css";
 
 export default function Services() {
   return (
     <main>
-      <div class="content">
+      <div className="content">
         <h1>Services</h1>
         <p>
           Your website is your first impression to the world. I create modern,
@@ -14,9 +17,9 @@ export default function Services() {
           and built for growth.
         </p>
         <img
-          src="images/services-banner.jpg"
+          src={servicesBanner}
           alt="cartoon character working"
-          class="banner"
+          className="banner"
         />
         <br />
         <h5>Web Design & Development</h5>
@@ -61,9 +64,9 @@ export default function Services() {
         </ul>
 
         <img
-          src="images/services-life.jpg"
+          src={servicesLife}
           alt="cartoon character looking"
-          class="banner"
+          className="banner"
         />
 
         <h5>Why Work With Me?</h5>
@@ -75,10 +78,10 @@ export default function Services() {
           accessible, scalable, and ready for worldwide impact.
         </p>
         <p>
-          <span class="fst-italic">Let's bring your vision to life.</span>
+          <span className="fst-italic">Let's bring your vision to life.</span>
         </p>
         <a
-          class="btn btn-dark"
+          className="btn btn-dark"
           href="contact.html"
           role="button"
           id="contactButton"

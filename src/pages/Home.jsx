@@ -19,7 +19,7 @@ export default function Home() {
           className="btn btn-dark"
           to="/contact"
           role="button"
-          id="contactButton"
+          id="contactBtn"
         >
           Contact
         </Link>
@@ -91,6 +91,7 @@ export default function Home() {
           </div>
         </div>
         <h5 className="centerLine">Work Projects</h5>
+        <br />
         <div className="row d-flex justify-content-evenly projectTitle">
           <div className="project1 col-sm-4 centerLine">
             <Link to="/projects">
@@ -134,7 +135,7 @@ export default function Home() {
             className="btn btn-dark"
             to="/contact"
             role="button"
-            id="contactButton"
+            id="contactBtn"
           >
             Contact
           </Link>

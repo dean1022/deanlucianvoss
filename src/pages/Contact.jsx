@@ -1,13 +1,12 @@
 import React from "react";
+import profile from "../images/profile-pic.jpeg";
+import "./Contact.css";
 
 export default function Contact() {
   return (
     <main>
-      <div
-        class="row d-flex justify-content-evenly"
-        style="gap: 20px; margin: 20px"
-      >
-        <div class="contact col-sm-3" style="text-align: center">
+      <div className="row d-flex justify-content-evenly gap">
+        <div className="contact col-sm-3 center">
           <h1>Contact me</h1>
           <br />
           <a href="http://www.linkedin.com/in/dean-voss" target="_blank">
@@ -25,12 +24,11 @@ export default function Contact() {
             deanlucianvoss@gmail.com
           </a>
         </div>
-        <div class="col-sm-3" style="text-align: center">
+        <div className="col-sm-3 center">
           <img
-            src="images/profile-pic.jpeg"
+            src={profile}
             alt="Profile picture of Dean"
-            class="img-fluid"
-            style="width: 150px; height: auto"
+            className="img-fluid profile-pic"
           />
         </div>
       </div>
