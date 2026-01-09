@@ -30,7 +30,7 @@ export default function Home() {
         </p>
         <img src={keyboard} alt="keyboard" id="keyboard" />
 
-        <h5>Personal Projects</h5>
+        <h5 className="centerLine">Personal Projects</h5>
         <div className="row d-flex justify-content-evenly projects">
           <div className="project1 col-sm-3">
             <Link to="/projects">
@@ -64,12 +64,11 @@ export default function Home() {
           </div>
         </div>
         <div className="title row d-flex justify-content-evenly">
+          <Link to="/about">
+            {" "}
+            <h5 className="centerLine">Experience</h5>
+          </Link>
           <div className="experiences col-sm-5">
-            <Link to="/about">
-              {" "}
-              <h5>Experience</h5>
-            </Link>
-            <br />
             <div className="row experience1">
               <div className="placePosition col-6">
                 <p className="experienceTitle">Eeshani Guest Inn</p>
@@ -91,7 +90,7 @@ export default function Home() {
             <img src={team} alt="" className="img-fluid teamImg" />
           </div>
         </div>
-        <h5>Work Projects</h5>
+        <h5 className="centerLine">Work Projects</h5>
         <div className="row d-flex justify-content-evenly projectTitle">
           <div className="project1 col-sm-4 centerLine">
             <Link to="/projects">
@@ -110,7 +109,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="contact centerLine">
+        <div className="centerLine">
           <h5>Skills</h5>
           <br />
           <p>Technical Support & Systems</p>
