@@ -32,7 +32,7 @@ export default function Home() {
 
         <h5 className="centerLine">Personal Projects</h5>
         <div className="row d-flex justify-content-evenly projects">
-          <div className="project1 col-sm-3">
+          <div className="project1 col-sm-3 centerLine">
             <Link to="/projects">
               <img
                 src={weatherApp}
@@ -42,7 +42,7 @@ export default function Home() {
               <p>Weather App</p>
             </Link>
           </div>
-          <div className="project2 col-sm-3">
+          <div className="project2 col-sm-3 centerLine">
             <Link to="/projects">
               <img
                 src={worldClock}
