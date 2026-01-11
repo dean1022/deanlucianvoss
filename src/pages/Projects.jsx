@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import projectBanner from "../images/project-banner.jpg";
 import rcCar from "../images/rc-car.jpg";
 import foosball from "../images/foosball.jpg";
@@ -8,7 +8,22 @@ import clock from "../images/world-clock.png";
 import poem from "../images/poem-generator.png";
 import "./Projects.css";
 
+import { useLocation } from "react-router-dom";
+
 export default function Projects() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (!location.hash) return;
+
+    const id = location.hash.replace("#", "");
+    const el = document.getElementById(id);
+
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  }, [location]);
+
   return (
     <main>
       <div className="container">
@@ -24,7 +39,7 @@ export default function Projects() {
 
       <div className="content">
         <h5>Work Projects</h5>
-        <div className="row" id="workProject1">
+        <div className="row" id="workproject1">
           <div className="col-6">
             <img src={rcCar} alt="rc car" className="image img-thumbnail" />
           </div>
@@ -44,7 +59,7 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="row" id="workProject2">
+        <div className="row" id="workproject2">
           <div className="col-6">
             <img
               src={foosball}
@@ -71,7 +86,7 @@ export default function Projects() {
         </div>
 
         <h5>Personal Projects</h5>
-        <div className="row">
+        <div className="row" id="personalproject1">
           <div className="col-6">
             <img
               src={website}
@@ -108,7 +123,7 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="row" id="project1">
+        <div className="row" id="personalproject2">
           <div className="col-6">
             <img
               src={weather}
@@ -144,7 +159,7 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="row" id="project2">
+        <div className="row" id="personalproject3">
           <div className="col-6">
             <img
               src={clock}
@@ -179,7 +194,7 @@ export default function Projects() {
             </p>
           </div>
         </div>
-        <div className="row" id="project3">
+        <div className="row" id="personalproject4">
           <div className="col-6">
             <img
               src={poem}

@@ -54,12 +54,8 @@ export default function About() {
               2016-2024
             </p>
 
-            <p>Junior Developer/Automation Support/IT Support</p>
+            <p>Junior Developer/IT Support</p>
             <ul>
-              <li>
-                Developed an AI-powered Python automation tool that reduced
-                customer email response time by over 50%
-              </li>
               <li>
                 Provided technical support to 8+ remote users, resolving 100+
                 recurring cross-platform issues across Windows and Linux
@@ -113,17 +109,22 @@ export default function About() {
             Troubleshooting, end-user training, remote setup, Windows, Linux,
             Mac OS
             <br />
+            <span className="experience">Data Science: </span>
+            Data Visualization, Machine Learning, Jupyter Notebooks, R
+            Programming
+            <br />
             <span className="experience">Full Stack Development: </span>HTML,
-            CSS, JavaScript, Python, Java, Smalltalk, SQL, REact
+            CSS, JavaScript, Python, Java, Smalltalk, SQL, React
             <br />
             <span className="experience">Automation & Testing: </span>Python
             Scripting, Cypress, Selenium, Postman, REST Assured, GitHub Actions
             <br />
             <span className="experience">Tools & Platforms:</span> Microsoft
-            Azure, Git, Office 365, VS Code, Raspberry Pi, Arduino
+            Azure, Git, Office 365, VS Code, IntelliJ, Raspberry Pi, Arduino
             <br />
-            <span className="experience">Soft Skills: </span>Communication,
-            collaboration, adaptability, proactive problem-solving
+            <span className="experience">Soft Skills: </span>Clear
+            communication, collaboration, adaptability, proactive
+            problem-solving
           </p>
         </div>
       </div>

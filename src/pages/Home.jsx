@@ -33,27 +33,27 @@ export default function Home() {
         <h5 className="centerLine">Personal Projects</h5>
         <div className="row d-flex justify-content-evenly projects">
           <div className="project1 col-sm-3 centerLine">
-            <Link to="/projects">
+            <Link to="/projects#personalproject2">
               <img
                 src={weatherApp}
-                alt="project 1"
+                alt="weather app"
                 className="pop-off img-fluid"
               />
               <p>Weather App</p>
             </Link>
           </div>
           <div className="project2 col-sm-3 centerLine">
-            <Link to="/projects">
+            <Link to="/projects#personalproject3">
               <img
                 src={worldClock}
-                alt="project 2"
+                alt="world clock"
                 className="pop-off img-fluid"
               />
               <p>World Clock</p>
             </Link>
           </div>
           <div className="project3 col-sm-3 centerLine">
-            <Link to="/projects">
+            <Link to="/projects#personalproject4">
               <img
                 src={poemGenerator}
                 alt="project 3"
@@ -73,7 +73,7 @@ export default function Home() {
               <div className="placePosition col-6">
                 <p className="experienceTitle">Eeshani Guest Inn</p>
                 <p>Junior Developer</p>
-                <p>Junior Automation Support</p>
+                <p>Automation Support</p>
                 <p>IT Support</p>
               </div>
               <div className="date col-3">2016-24</div>
@@ -94,16 +94,16 @@ export default function Home() {
         <br />
         <div className="row d-flex justify-content-evenly projectTitle">
           <div className="project1 col-sm-4 centerLine">
-            <Link to="/projects">
-              <img src={rcCar} alt="project 1" className="pop-off img-fluid" />
+            <Link to="/projects#workproject1">
+              <img src={rcCar} alt="RC car" className="pop-off img-fluid" />
               <p>RC Car Web Controller</p>
             </Link>
           </div>
           <div className="project2 col-sm-4 centerLIne">
-            <Link to="/projects">
+            <Link to="/projects#workproject2">
               <img
                 src={foosball}
-                alt="project 2"
+                alt="foosball table"
                 className="pop-off img-fluid"
               />
               <p>Foosball Scoring System</p>
@@ -115,7 +115,7 @@ export default function Home() {
           <br />
           <p>Technical Support & Systems</p>
           <p>Full Stack Development</p>
-          <Link to="/about">...more</Link>
+          <Link to="/about#skills">...more</Link>
           <br />
           <h5>Certifications</h5>
           <br />
