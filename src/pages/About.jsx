@@ -114,13 +114,14 @@ export default function About() {
             Programming
             <br />
             <span className="experience">Full Stack Development: </span>HTML,
-            CSS, JavaScript, Python, Java, Smalltalk, SQL, React
+            CSS, JavaScript, Python, Java, Smalltalk, SQL, React, Rust, Arduino
+            IDE
             <br />
             <span className="experience">Automation & Testing: </span>Python
             Scripting, Cypress, Selenium, Postman, REST Assured, GitHub Actions
             <br />
-            <span className="experience">Tools & Platforms:</span> Microsoft
-            Azure, Git, Office 365, VS Code, IntelliJ, Raspberry Pi, Arduino
+            <span className="experience">Tools & Platforms:</span> Git, Office
+            365, VS Code, IntelliJ, Raspberry Pi, Arduino
             <br />
             <span className="experience">Soft Skills: </span>Clear
             communication, collaboration, adaptability, proactive
